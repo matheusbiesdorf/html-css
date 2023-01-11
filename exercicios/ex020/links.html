@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{ /*visited é uma pseudoclasse. Representa um link visitado*/
+            color: darkred;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+        a:active{ /*active é uma pseudoclasse. Quando clicamos, o link fica amarelo*/
+            color: yellow;
+        }
+
+        .especial{
+            background-color: rgb(216, 90, 90);
+        }
+
+        .especial::before{
+            content: '→ ';
+        }
+
+        .especial::after{ /*depois de todos os links. after nesse caso é um pseudoelemento*/
+            content: ' ←'; /*content significa conteúdo*/
+
+        }
+
+
+
+
+    </style>
+
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo" target="_blank" class="especial">Canal do YouTube</a></li>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositório GitHub</a></li>
+    </ul>
+    <!--Por padrão, sites visitados fica roxo e sites não visitados ficam azul-->
+
+
+
+    
+</body>
+</html>
