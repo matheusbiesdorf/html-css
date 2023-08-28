@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: brown;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color:darkorange
+        }
+        a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+        a:active{
+            color: yellow;
+        }
+
+        a::before{
+            content: '☛ ';
+        }
+        a::after{
+            content: ' ☚';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/" target="_blank" rel="external">YouTube</a></li>
+        <li><a href="https://gurudocartola.com/" target="_blank" rel="external">Guru do Cartola</a></li>
+        <li><a href="https://www.juventude.com.br/" target="_blank" rel="external">Juventude</a></li>
+    </ul>
+</body>
+</html>

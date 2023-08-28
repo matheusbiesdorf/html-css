@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #D9A78B;
+            margin: 0px;
+            padding: 0px;
+        }
+        header{
+            background-color: #590202;
+            color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav{
+            background-color: #8C6151;
+            padding: 3px;
+            box-shadow: inset 1px 1px 1px black;
+        }
+        nav>a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 5px;
+        }
+        nav>a:hover{
+            text-decoration: underline;
+            color: #D9B1A3;
+        }
+        main{
+            background-color: #8C6151;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+        }
+        article{
+            background-color: #D9B1A3;
+            padding: 2px;
+        }
+        article > aside{
+            background-color: #8C6151;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 2px;
+            margin: 0px;
+        }
+        footer>p{
+            margin: 0px;
+        }
+        div#bola{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: red;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body> 
+
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+            <p>Esportes, política e tecnologia</p>
+        </section>
+
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum cupiditate neque, nobis in impedit facere blanditiis dolores odit eveniet repellat, consectetur veritatis mollitia dolorem? Necessitatibus sint dolorem tempora nobis excepturi?</p>
+                <aside>
+                    <p>Artigo escrito por Natália Ramos de Castro</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Matheus Biesdorf</p>
+    </footer>
+
+    <div id="bola"></div>
+
+</body>
+</html>
