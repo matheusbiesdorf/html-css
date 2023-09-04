@@ -5,24 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
     <style>
+        *{
+            padding: 0px;  
+            margin: 0px;
+        }
         body{
             font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to bottom, orange , yellow);
+            height: 100vh;
         }
         table{
             width: 500px;
             border: 1px solid black;
             border-collapse: collapse;
+            position: relative;
         }
+
         td,th{
             border: 1px solid black;
             padding: 10px;
         }
-        th{
+
+        thead, tfoot{
             background-color: grey;
             color: white;
         }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+            color: white;
+        }
+
+        tbody tr:nth-child(even){
+            background-color: lightgray;
+        }
+
+        tbody tr:nth-child(odd){
+            background-color: white;
+        }
+
         td.num{
             text-align: right;
+        }
+
+        caption{
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        #coluna2{
+            width: 100px;
         }
     </style>
 </head>
@@ -30,10 +65,11 @@
     <h1>Uso de tabelas grandes</h1>
 
     <table>
+        <caption>Número de sócio-torcedores</caption>
         <thead>
             <tr>
-                <th>Clube</th>
-                <th>Quantidade de sócios</th>
+                <th scope="col">Clube</th>
+                <th scope="col" id="coluna2">Quantidade de sócios</th>
             </tr>
         </thead>
         <tbody>
@@ -57,10 +93,62 @@
                 <td>Flamengo</td>
                 <td class="num">100.000</td>
             </tr>
+            <tr>
+                <td>-</td>
+                <td class="num">-</td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td class="num">-</td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td class="num">-</td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td class="num">-</td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td class="num">-</td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td class="num">-</td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td class="num">-</td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td class="num">-</td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td class="num">-</td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td class="num">-</td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td class="num">-</td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td class="num">-</td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td class="num">-</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total</th>
+                <th scope="row">Total</th>
                 <td class="num"><strong>635.000</strong></td>
             </tr>
         </tfoot>
