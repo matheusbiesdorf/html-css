@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/style.css">
     <title>Media Query</title>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css" media="screen">
 
 </head>
-<body>
+<body onresize="mudouTamanho()">
 
     <header>
         <h1>Meu site</h1>
@@ -43,6 +44,14 @@
                 itens.style.display = 'none'
             }else{
                 itens.style.display = 'block'
+            }
+        }
+
+        function mudouTamanho(){
+            if(window.innerWidth >= 767){
+                itens.style.display = 'block'
+            }else{
+                itens.style.display = 'none'
             }
         }
     </script>
