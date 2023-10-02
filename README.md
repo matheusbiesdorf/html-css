@@ -5,3 +5,4 @@
 <a href="https://matheusbiesdorf.github.io/projeto-cordel/">Projeto cordel</a>
 <a href="https://matheusbiesdorf.github.io/projeto-social/">Projeto redes sociais</a>
 <a href="https://matheusbiesdorf.github.io/projeto-login/">Projeto redes sociais</a>
+<a href="https://matheusbiesdorf.github.io/projeto-pessoal-01/">Projeto pessoal - Loja Virtual</a>
